@@ -2,10 +2,10 @@
 clear all; close all %#ok<CLALL> reset everything
 
 % Defining PUL parameter values
-R = 1.35; % resistance PUL  (Ω/m)
-L = 322;  % inductance PUL  (H/m)
-G = 0.77; % conductance PUL (S/m)
-C = 129;  % capacitance PUL (F/m)
+R = 1.35;     % resistance PUL  (Ω/m)
+L = 322e-9;   % inductance PUL  (H/m) 
+G = 0.77e-3;  % conductance PUL (S/m)
+C = 129e-12;  % capacitance PUL (F/m)
 
 f = 10^9:10^6:10^10; % frequency vector 1 GHz to 10 GHz (with a step of 10 MHz)
 w = f.*(2*pi);
