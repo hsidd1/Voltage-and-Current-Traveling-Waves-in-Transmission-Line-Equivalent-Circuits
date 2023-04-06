@@ -13,43 +13,48 @@ gamma = sqrt((R+1i*w*L).*(G+1i*w*C)); % complex propagation constant
 Z0 = sqrt((R+1i*w*L)./(G+1i*w*C));    % characteristic impedance (voltage-to-current ratio for a traveling wave in a TL)
 
 % values to be plotted 
-attenuation_constant = real(gamma); % alpha
-phase_constant = imag(gamma);       % beta
+attenuation_constant = real(gamma);  % alpha
+phase_constant = imag(gamma);        % beta
 vp = w./phase_constant;              % phase velocity 
 % real and imaginary parts of characteristic impedance
 ReZ0 = real(Z0);
 ImZ0 = imag(Z0);
 
 % attenuation constant plot
-subplot(5,1,1);
+figure
+%subplot(5,1,1);
 plot(f,attenuation_constant);
 title('Attenuation Constant against Frequency');
 xlabel('Frequency (Hz)');
-ylabel('Attenuation Constant (rad)'); 
+ylabel('Attenuation Constant (m^-1)'); 
 
 % phase constant plot
-subplot(5,1,2);
+%subplot(5,1,2);
+figure
 plot(f, phase_constant);
 title('Phase constant against Frequency');
 xlabel('Frequency (Hz)'); 
-ylabel("Phase Constant (rad)");
+ylabel("Phase Constant (rad/m)");
 
 % phase velocity plot
-subplot(5,1,3);
+%subplot(5,1,3);
+figure
 plot(f,vp);
 title('Phase Velocity against Frequency');
 xlabel('Frequency (Hz)'); 
 ylabel('Phase Velocity (m/s)');
 
 % real part of characteristic impedance plot
-subplot(5,1,4);
+%subplot(5,1,4);
+figure
 plot(f, ReZ0);
 title('Real Part of Characteristic Impedance against Frequency');
 xlabel('Frequency (Hz)'); 
 ylabel('Real Part of Characteristic Impedance (Ohms)');
 
 % imaginary Part of Characteristic Impedance plot
-subplot(5,1,5);
+%subplot(5,1,5);
+figure
 plot(f, ImZ0);
 title('Imaginary Part of Characteristic Impedance against Frequency');
 xlabel('Frequency (Hz)'); 
