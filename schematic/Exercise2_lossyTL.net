@@ -1,0 +1,9 @@
+* C:\Users\hamza\OneDrive\Documents\Term2 Github\Voltage-and-Current-Traveling-Waves-in-Transmission-Line-Equivalent-Circuits\schematic\Exercise2_lossyTL.asc
+O1 in 0 out 0 TL1
+Vs S 0 PULSE(0 1 0 10e-16 10e-16 0.5n 1n)
+RS in S 50
+RL 0 out 50
+.model TL1 LTRA (L=322n C=129p R=13.5 Len=1)
+.tran 0 10n 0 0.001n
+.backanno
+.end

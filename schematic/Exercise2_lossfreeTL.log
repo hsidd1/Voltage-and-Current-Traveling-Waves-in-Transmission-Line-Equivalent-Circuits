@@ -1,0 +1,23 @@
+Circuit: * C:\Users\hamza\OneDrive\Documents\Term2 Github\Voltage-and-Current-Traveling-Waves-in-Transmission-Line-Equivalent-Circuits\schematic\Exercise2_lossfreeTL.asc
+
+tl1: using linear interpolation because trytocompact option specified
+.OP point found by inspection.
+
+Date: Thu Apr  6 22:06:29 2023
+Total elapsed time: 0.154 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 21690
+traniter = 21690
+tranpoints = 10846
+accept = 10730
+rejected = 116
+matrix size = 6
+fillins = 0
+solver = Normal
+Avg thread counts: 1.0/1.1/1.1/1.0
+Matrix Compiler1:      15 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: off  [0.1]/0.2/0.1
+
