@@ -22,14 +22,12 @@ ImZ0 = imag(Z0);
 
 % attenuation constant plot
 figure
-%subplot(5,1,1);
 plot(f,attenuation_constant);
 title('Attenuation Constant against Frequency');
 xlabel('Frequency (Hz)');
 ylabel('Attenuation Constant (m^-1)'); 
 
 % phase constant plot
-%subplot(5,1,2);
 figure
 plot(f, phase_constant);
 title('Phase constant against Frequency');
@@ -37,7 +35,6 @@ xlabel('Frequency (Hz)');
 ylabel("Phase Constant (rad/m)");
 
 % phase velocity plot
-%subplot(5,1,3);
 figure
 plot(f,vp);
 title('Phase Velocity against Frequency');
@@ -45,7 +42,6 @@ xlabel('Frequency (Hz)');
 ylabel('Phase Velocity (m/s)');
 
 % real part of characteristic impedance plot
-%subplot(5,1,4);
 figure
 plot(f, ReZ0);
 title('Real Part of Characteristic Impedance against Frequency');
@@ -53,7 +49,6 @@ xlabel('Frequency (Hz)');
 ylabel('Real Part of Characteristic Impedance (Ohms)');
 
 % imaginary Part of Characteristic Impedance plot
-%subplot(5,1,5);
 figure
 plot(f, ImZ0);
 title('Imaginary Part of Characteristic Impedance against Frequency');
